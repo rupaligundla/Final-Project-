@@ -1,0 +1,26 @@
+
+<nav class="navbar" *ngIf="showMenu">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="/home" routerLinkActive="active" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/add-employee" routerLinkActive="active" class="nav-link">Add Employee</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/show-all-employees" routerLinkActive="active" class="nav-link">Employee List</a>
+    </li>
+  </ul>
+
+  <div class="logout-container">
+    <button (click)="logout()" class="logout-button">Logout</button>
+  </div>
+</nav>
+
+<!-- Always show routed components -->
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>Employee Management System</p>
+</footer>

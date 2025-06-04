@@ -1,0 +1,64 @@
+/* Navbar Container */
+.navbar {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+
+/* Navigation List */
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row; /* Ensure items are in a row */
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual Nav Item */
+.nav-item {
+  margin-right: 1.5rem;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: white !important;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #00d1ff !important;
+}
+
+/* Logout Container aligned right */
+.logout-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #d62828;
+}
